@@ -1,7 +1,7 @@
 :root{
     --accent-color: #87CEEB;
 }
-
+/*Configuração Global e Tipografia*/
 body {
     font-family: 'inter', sans-serif;
     color: #333333;
@@ -33,3 +33,16 @@ a{
 a:hover {
     color: var(--accent-color)
 }
+/*Estilizar Cabeçalho e Navegação*/
+
+/*CSS: Estilizar Seção Principal*/
+
+/*CSS: Estilizar Seção Livros*/
+
+/*CSS: Estilizar Seção Sobre o Autor*/
+
+/*CSS: Estilizar Seção Contato e Formulário*/
+
+/*CSS: Estilizar Rodapé*/
+
+/*Responsividade Geral*/
