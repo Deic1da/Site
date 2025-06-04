@@ -92,6 +92,86 @@ a:hover {
 }
 
 /*CSS: Estilizar Seção Principal*/
+.secao-principal{
+    background-color: white;
+    padding: 6rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    margin: 0 1rem 2rem 1rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 1.5rem;
+}
+
+.conteudo-texto-principal{
+    flex: 1;
+    text-align: left;
+    padding-right: 1.5rem;
+}
+.conteudo-texto-principal h1{
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.destaque-nome{
+    color: var(--accent-color)
+}
+
+.conteudo-texto-principal p{
+    font-size: 1.25rem;
+    color: #555555;
+    margin-bottom: 2rem;
+}
+
+.botao-cta {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.botao-cta:hover {
+    background-color: #6A9CCF;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.imagem-principal{
+    flex-shrink: 0;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-principal img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+
+}
 
 /*CSS: Estilizar Seção Livros*/
 
