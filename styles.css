@@ -173,15 +173,62 @@ a:hover {
 
 }
 
+/*CSS: Estilizar Seção Livros*/
+.grade-livros {
+    display: grid; /* Transforma o contêiner em uma grade */
+    /* Define 3 colunas de largura igual para desktop.
+       'repeat(auto-fit, minmax(280px, 1fr))' é uma técnica responsiva poderosa:
+       cria o máximo de colunas que couberem, cada uma com no mínimo 280px e 1fr (fração do espaço disponível). */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem; /* Espaçamento entre os cards (linhas e colunas) */
+    justify-items: center; /* Centraliza os itens dentro de suas células de grade */
+}
+.card-livro {
+    background-color: white; /* Fundo branco para o card */
+    border-radius: 0.75rem; /* Bordas arredondadas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra para o card */
+    overflow: hidden; /* Garante que a imagem arredondada não vaze */
+    text-align: center; /* Centraliza o texto dentro do card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+    width: 100%; /* Ocupa a largura total da célula da grade */
+    max-width: 320px; /* Largura máxima para o card individual */
+}
+.card-livro:hover {
+    transform: translateY(-5px); /* Move o card ligeiramente para cima ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Aumenta a sombra ao passar o mouse */
+}
 .capa-livro {
-    width: 400px;
-    ;
-
-
-
+    width: 100%; /* Ocupa a largura total do card */
+    height: 400px; /* Altura fixa para as capas (você pode ajustar) */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
+    border-top-left-radius: 0.75rem; /* Arredonda as bordas superiores para combinar com o card */
+    border-top-right-radius: 0.75rem;
+    display: block; /* Remove qualquer espaço extra abaixo da imagem */
+}
+.conteudo-card-livro {
+    padding: 1.5rem; /* Espaçamento interno */
+}
+.titulo-livro {
+    font-size: 1.625rem; /* Tamanho da fonte do título do livro */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+    color: black; /* Cor preta */
+}
+.sinopse-curta {
+    font-size: 1rem; /* Tamanho da fonte da sinopse */
+    color: #555555; /* Cor cinza mais suave */
+    margin-bottom: 1rem; /* Espaçamento abaixo da sinopse */
+}
+.link-saiba-mais {
+    color: var(--accent-color); /* Usa a cor de destaque */
+    font-weight: 600; /* Negrito */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s ease; /* Transição suave para hover */
+}
+.link-saiba-mais:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #6A9CCF; /* Um tom ligeiramente diferente da cor de destaque */
 }
 
-/*CSS: Estilizar Seção Livros*/
 
 /*CSS: Estilizar Seção Sobre o Autor*/
 
