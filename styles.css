@@ -452,3 +452,115 @@ footer p:last-child {
 
 /*Responsividade Geral*/
 
+@media (max-width: 768px) {
+    .header-principal,
+    .secao-principal,
+    .secao-livros,
+    .secao-sobre,
+    .secao-contato,
+    footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navegacao-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile-button {
+        display: block;
+        color: #333333;
+    }
+
+    .container-principal {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .conteudo-texto-principal {
+        padding-right: 0;
+    }
+
+    .conteudo-texto-principal h1 {
+        font-size: 2.5rem;
+    }
+
+    .conteudo-texto-principal p {
+        font-size: 1.1rem;
+    }
+
+    .imagem-principal {
+        width: 300px;
+        height: 380px;
+        margin-top: 1.5rem;
+    }
+
+    .titulo-secao {
+        font-size: 2rem;
+    }
+
+    .grade-livros {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem 1rem;
+    }
+
+    .card-livro {
+        max-width: none;
+    }
+
+    .capa-livro {
+        height: 350px;
+    }
+
+    .container-sobre {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .imagem-autor-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .conteudo-texto-sobre {
+        padding-left: 0;
+    }
+
+    .titulo-secao-sobre {
+        font-size: 2rem;
+    }
+
+    .biografia-paragrafo {
+        font-size: 1rem;
+    }
+
+    .citacao-autor {
+        font-size: 1.1rem;
+        padding-left: 1rem;
+        border-left-width: 3px;
+    }
+
+    .titulo-secao-contato {
+        font-size: 2rem;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    .input-campo,
+    .textarea-campo {
+        margin-bottom: 1rem;
+        max-width: 80%;
+    }
+
+    .redes-sociais-container{
+        flex-direction: column;
+    }
+}
